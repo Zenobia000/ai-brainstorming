@@ -57,6 +57,21 @@
 | 大量自動化 | Playwright 腳本 | `node capture.js <url>` |
 | 簡單頁面 | WebFetch + 手動 DevTools | 快速但不完整 |
 
+#### Playwright MCP 環境準備（受限 Linux）
+
+> **若 Playwright MCP 第一次呼叫工具就報 `Chromium distribution 'chrome' is not found`**：
+> 你的環境裝不了 Chrome channel（公司電腦 sudoers 通常擋掉 reinstall script）。
+> 改用 Playwright 自帶的 chromium：
+>
+> ```bash
+> npx playwright install chromium
+> claude mcp remove playwright
+> claude mcp add playwright -- npx -y @playwright/mcp@latest --browser chromium
+> # /exit 後重啟 claude
+> ```
+>
+> 完整背景與失敗路徑見 [`lessons/2026-04-07-playwright-mcp-chrome-channel.md`](lessons/2026-04-07-playwright-mcp-chrome-channel.md)。
+
 ### 1.3 法律與倫理紅線
 
 - ❌ 不擷取登入後內容（除非有明示授權）

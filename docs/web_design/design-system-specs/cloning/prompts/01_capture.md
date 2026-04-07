@@ -5,6 +5,24 @@
 
 ---
 
+## 環境前置檢查（每次新環境第一次使用）
+
+> **若 Playwright MCP 第一次呼叫工具就報 `Chromium distribution 'chrome' is not found at /opt/google/chrome/chrome`**：
+> 你的環境裝不了 Chrome channel（公司／受管理 Linux 上 sudoers 多半會擋 reinstall script，且 `sudo npx` 還會踩到 root node 版本不相容）。
+> 改用 Playwright 自帶的 chromium，純 userland：
+>
+> ```bash
+> npx playwright install chromium
+> claude mcp remove playwright
+> claude mcp add playwright -- npx -y @playwright/mcp@latest --browser chromium
+> # /exit 後重啟 claude，新 session 才會載入 --browser chromium
+> ```
+>
+> 關鍵旗標：`--browser chromium`。沒這個就會回到 chrome channel 死路。
+> 完整背景與三條失敗路徑見 [`../lessons/2026-04-07-playwright-mcp-chrome-channel.md`](../lessons/2026-04-07-playwright-mcp-chrome-channel.md)。
+
+---
+
 ## 給 Agent 的 Prompt
 
 ```
