@@ -132,13 +132,16 @@ Figma 管理 Design System → Figma MCP 讓 AI 讀取 → Claude Code 生成一
 
 ### 3.1 安裝 Pencil
 
-```bash
-# VS Code / Cursor 擴展市集搜尋 "Pencil" 安裝
-# 或使用獨立桌面應用程式（從 pencil.dev 下載）
+1. 從 [pencil.dev](https://pencil.dev) 下載 Desktop App（Mac / Linux / Windows）
+2. 開啟 App，執行 `File → Install pencil command into PATH`
+3. 重開 terminal 驗證：
 
-# 安裝 Pencil CLI（可選）
-npm install -g @pencil-dev/cli
+```bash
+pencil --help
+pencil --agent-config config.json
 ```
+
+> Pencil CLI 是 Desktop App 內建功能，**不在 npm registry**，請勿使用 `npm install`。
 
 ### 3.2 設定 Figma MCP
 
@@ -161,31 +164,35 @@ claude mcp add --transport http --scope user figma https://mcp.figma.com/mcp
 
 ### 3.3 設定 Pencil MCP
 
-```bash
-# Pencil 啟動後自動運行 MCP server
-# 在 Claude Code 中添加：
-claude mcp add pencil
+MCP server 應寫在 `~/.claude.json`（user-level）或專案根的 `.mcp.json`（project-level），**不是** `.claude/settings.json`。
 
-# 或在 .claude/settings.json 中手動配置：
+若 Pencil 提供 stdio MCP 子指令，使用：
+
+```bash
+claude mcp add pencil -- pencil <子指令>
+```
+
+或在 `.mcp.json` 手動配置：
+
+```json
 {
   "mcpServers": {
     "pencil": {
       "command": "pencil",
-      "args": ["mcp"]
+      "args": ["<子指令>"]
     }
   }
 }
 ```
 
+> Pencil MCP integration 仍處於 early stage，官方未公開固定的子指令名稱。先以 `pencil --help` 確認當前版本支援的子指令再填入。若不支援，改走 §4 的 `.pen` 檔案流程。
+
 ### 3.4 驗證設定
 
 ```bash
-# 確認兩個 MCP Server 都連上
 claude mcp list
-
-# 預期輸出：
-# figma: connected (remote)
-# pencil: connected (local)
+# figma:  connected (remote)
+# pencil: connected (local)   ← 視 Pencil 版本支援度
 ```
 
 ### 3.5 專案結構建議
