@@ -52,8 +52,21 @@ prompt_architect_pipeline/
     ├── 01_components_spec.md             ← Button / Input / Table / Modal 元件庫規格
     ├── 02_patterns_spec.md               ← Form / Table / Nav / Feedback 互動模式
     ├── 03_templates_spec.md              ← Dashboard / List / Detail / Settings 頁面模板
-    └── 99_documentation_spec.md          ← Do/Don't / QA / Change Log / 治理規範
+    ├── 99_documentation_spec.md          ← Do/Don't / QA / Change Log / 治理規範
+    └── cloning/                           ← 網站複製工作流（任意 URL → 規格書）
+        ├── CLONE_WORKFLOW_PLAYBOOK.md     ← 六階段戰法
+        ├── prompts/                        ← 每階段固定 prompt
+        ├── templates/                      ← 輸出範本
+        ├── checklists/                     ← 驗收清單
+        └── clones/                         ← 每個複製專案
 ```
+
+### 路徑 D：我要複製某個網站當養分（Website Cloning Workflow）
+
+1. 讀 [`design-system-specs/cloning/CLONE_WORKFLOW_PLAYBOOK.md`](design-system-specs/cloning/CLONE_WORKFLOW_PLAYBOOK.md) — 六階段流程
+2. 在 `cloning/clones/{slug}/` 建立目錄，從 `templates/clone_target_template.md` 拷貝 README
+3. 依序執行 Capture → Extract → Analyze → Differentiate → Specify → Validate
+4. 通過 `checklists/validation_checklist.md` 後，spec 接入 Pipeline Orchestrator
 
 ## 快速上手
 
