@@ -551,6 +551,93 @@ D. Admin：
 
 ---
 
+## 11. SaaS AI Tool Landing（AI 工具行銷著陸頁）
+
+> 來源：Clone 分析 — shipyouridea.today + ideacheck.cc（2026-04-08）
+> 原型類別：AI SaaS / Micro-SaaS / MVP Landing
+
+### 一句話定義
+AI 驅動的輔助工具，單頁行銷 + Playground 入口，以免費 tier 為轉化核心。
+
+### 商業目標
+訪客 → 免費試用（無需信用卡）→ 累積用量觸達 limit → 升級付費
+
+### 積木配方（單頁 5–7 sections）
+
+| 模組 | 深度 | 具體功能 |
+|------|------|----------|
+| Hero | L3 | headline + capability-tag pills（6–7個）+ primary CTA + social proof count |
+| Demo / Showcase | L3 | sticky 說明面板 + App Mock Frame（模擬 UI，不用真實截圖）|
+| Data/Trust（可選）| L3 | 資料來源說明 + 統計數字 + source cards（強信任需求時加）|
+| Pricing | L2 | 2–3 tier；至少 1 個可直接購買；Coming Soon 佔位需謹慎 |
+| FAQ | L1 | flat dl，6–8 條，消除試用疑慮 |
+| Footer | L1 | logo + nav links + copyright |
+
+### MVP 最小集合
+Hero + Demo（Mock Frame）+ Pricing（2-tier）+ FAQ
+
+### 頁面路由
+```
+/            → Landing（本原型）
+/playground  → 核心 AI 工具（無需登入可試用）
+/login       → 登入 / 訂閱管理
+/privacy     → 法律頁
+/terms       → 法律頁
+```
+
+### 關鍵設計決策
+
+**1. Demo Section**：用「App Mock Frame」而非截圖
+- macOS 視窗 titlebar（traffic-light dots + centered title）
+- tab bar（2 tabs，active 有 indigo underline indicator）
+- 模擬真實 UI 結果（行動指南 / 分析報告 / dashboard）
+
+**2. 定價策略變體**
+
+| 策略 | 適用 | 實例 |
+|------|------|------|
+| 3-tier + Coming Soon | 早期 MVP，建立期待 | ShipYourIdea |
+| 2-tier 直接可買 | 有可交付付費方案 | IdeaCheck |
+
+建議：優先走 2-tier（Free / Pro），Coming Soon 超過 3 個月未上線應移除。
+
+**3. Social Proof**：count 放 Hero CTA 正下方（`text-sm text-gray-400`）
+
+**4. Scroll Reveal**：`opacity:0 + translateY(24px)` → none，優先 CSS 實作避免 JS bundle 增加
+
+### Reference 網站
+- **ShipYourIdea** (shipyouridea.today) — 3-tier + Coming Soon 策略、6 capability tags、Colored Info Cards
+- **IdeaCheck** (ideacheck.cc) — 2-tier 直接訂閱、Score Ring + Dimension Bar、Data Sources 信任 section
+
+### Lovable 提示詞起手式
+
+```
+建立一個 AI SaaS Tool Landing Page，用於推廣 [你的 AI 工具名稱]。
+
+技術棧：Next.js + Tailwind CSS v4 + shadcn/ui + Inter 字型
+
+目標受眾：[描述]
+核心價值主張：[一句話，避免行銷腔，用具體功能描述]
+主要 CTA：[進入免費 Playground]
+
+頁面結構（由上到下）：
+1. Sticky Nav：logo | [Demo] [Pricing] [FAQ] | [Login button]
+2. Hero：h1（大膽、直接）+ capability tag pills（6個）+ primary CTA（indigo filled h-11）+ "X analyzed so far" count
+3. Demo Section：bg-gray-50；左側 sticky description（badge + h2 + feature-list + cta）；右側 App Mock Frame
+   Mock Frame 展示：[描述你的核心 AI 輸出樣式]
+4. Pricing：[2-tier: Free / Pro] or [3-tier with waitlist]
+   Free tier：[限制]；Pro tier：[定價 + 功能]
+5. FAQ：6 條，解答「準確嗎 / 跟 GPT 差在哪 / 免費限制是？」
+6. Footer：logo + nav + copyright
+
+設計系統：
+- 主色：[你的品牌色]
+- 所有 button 加 focus-visible:ring-2
+- 無 JS scroll reveal（改用 CSS @keyframes 或省略）
+```
+
+---
+
 ## 使用指南
 
 1. **找到你的類型** → 上面 10 種選最接近的

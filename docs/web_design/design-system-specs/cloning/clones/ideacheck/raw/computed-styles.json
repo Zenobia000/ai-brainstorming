@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "color": "lab(2.75381 0 0)",
+    "background-color": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+    "background": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8) none repeat scroll 0% 0% / auto padding-box border-box",
+    "font-family": "Inter, \"Inter Fallback\"",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "24px",
+    "padding": "0px",
+    "padding-top": "0px",
+    "padding-right": "0px",
+    "padding-bottom": "0px",
+    "padding-left": "0px",
+    "margin": "0px",
+    "border-radius": "0px",
+    "display": "block",
+    "flex-direction": "row",
+    "width": "1440px",
+    "height": "57px"
+  },
+  "footer": {
+    "color": "lab(2.75381 0 0)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "font-family": "Inter, \"Inter Fallback\"",
+    "font-size": "16px",
+    "font-weight": "400",
+    "line-height": "24px",
+    "padding": "40px 24px",
+    "padding-top": "40px",
+    "padding-right": "24px",
+    "padding-bottom": "40px",
+    "padding-left": "24px",
+    "margin": "0px",
+    "border-radius": "0px",
+    "display": "block",
+    "flex-direction": "row",
+    "width": "1440px",
+    "height": "105px"
+  }
+}

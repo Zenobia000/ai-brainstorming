@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "note": "Tailwind CSS v4 使用 JIT/inline-CSS；從 class 模式推斷斷點，非 stylesheet 解析",
+    "breakpoints_detected": "從 DOM class 名稱逆向推導"
+  },
+  "breakpoints": [
+    {
+      "breakpoint": "640px",
+      "prefix": "sm:",
+      "direction": "min-width",
+      "changes": [
+        "nav-links: hidden → flex（sm:flex）",
+        "hero: pb-16 → sm:pb-20, pt-24 → sm:pt-32",
+        "hero-h1: text-4xl → sm:text-5xl",
+        "hero-subtext: text-lg → sm:text-xl",
+        "footer: flex-col → sm:flex-row",
+        "pricing-grid: 1-col → sm:grid-cols-3",
+        "demo-description: h2 text-[1.75rem] → sm:text-3xl"
+      ]
+    },
+    {
+      "breakpoint": "1024px",
+      "prefix": "lg:",
+      "direction": "min-width",
+      "changes": [
+        "hero-h1: sm:text-5xl → lg:text-6xl",
+        "demo-layout: stack → lg:flex.items-start.gap-x-16",
+        "demo-description: sticky top-24 (lg:sticky.lg:top-24)",
+        "demo-description: w-auto → lg:w-96.lg:flex-none"
+      ]
+    }
+  ],
+  "effective_grid_system": {
+    "type": "Tailwind CSS max-width container",
+    "max_widths": {
+      "xs": "100% (no constraint)",
+      "sm": "640px viewport",
+      "max-w-6xl": "72rem / 1152px (main sections)",
+      "max-w-5xl": "64rem / 1024px (pricing)",
+      "max-w-4xl": "56rem / 896px (pricing grid)",
+      "max-w-3xl": "48rem / 768px (hero content)",
+      "max-w-2xl": "42rem / 672px (faq)",
+      "max-w-lg":  "32rem / 512px (hero subtext)"
+    },
+    "layout_method": "Flexbox + CSS Grid (grid-cols-3 for nav)"
+  }
+}

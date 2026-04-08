@@ -1,0 +1,163 @@
+{
+  "_meta": {
+    "source": "raw/css-vars-raw.json + raw/computed-styles.json",
+    "tech_stack": "Next.js + Tailwind CSS v4 + shadcn/ui",
+    "note": "LAB 值已轉換為近似 HEX；Tailwind v4 使用 lab() 色彩空間"
+  },
+  "colors": [
+    {
+      "token": "--color-indigo-600",
+      "value": "#4f46e5",
+      "value_lab": "lab(38.4% 52.6 -92.4)",
+      "frequency": 28,
+      "usage": ["nav.login-btn", "section-badge", "cta-primary", "check-icon", "pricing-tier-label", "text-indigo-600"]
+    },
+    {
+      "token": "--foreground / text-gray-950",
+      "value": "#030712",
+      "value_lab": "lab(2.75% 0 0)",
+      "frequency": 22,
+      "usage": ["h1", "h2", "h3", "nav-logo", "pricing-price", "faq-question"]
+    },
+    {
+      "token": "--muted-foreground / text-gray-500",
+      "value": "#6b7280",
+      "value_lab": "lab(47.78% -0.39 -10.0)",
+      "frequency": 18,
+      "usage": ["nav-links", "body-text", "hero-subtext", "pricing-tagline", "faq-answer"]
+    },
+    {
+      "token": "text-gray-400",
+      "value": "#9ca3af",
+      "value_lab": "lab(65.9% -0.83 -8.2)",
+      "frequency": 12,
+      "usage": ["footer-links", "social-proof", "inactive-tab", "feature-description"]
+    },
+    {
+      "token": "--background / bg-white",
+      "value": "#ffffff",
+      "value_lab": "lab(100% 0 0)",
+      "frequency": 15,
+      "usage": ["body", "nav-bg", "pricing-cards", "tag-pills", "mock-frame"]
+    },
+    {
+      "token": "bg-gray-50",
+      "value": "#f9fafb",
+      "value_lab": "lab(98.26% -0.25 -0.71)",
+      "frequency": 8,
+      "usage": ["demo-section-bg", "faq-bg-alt"]
+    },
+    {
+      "token": "--color-emerald-500 / bg-emerald-500",
+      "value": "#10b981",
+      "value_lab": "lab(66.98% -58.27 19.54)",
+      "frequency": 6,
+      "usage": ["community-tier-cta", "community-coming-soon-badge"]
+    },
+    {
+      "token": "--color-amber-500 / bg-amber-500",
+      "value": "#f59e0b",
+      "value_lab": "lab(72.72% 31.87 97.94)",
+      "frequency": 5,
+      "usage": ["coach-tier-cta", "coach-coming-soon-badge", "watchout-card-accent"]
+    },
+    {
+      "token": "--color-green-200 / bg-green-50 / border-green-200",
+      "value": "#bbf7d0",
+      "value_lab": "lab(92.4% -26.5 12.9)",
+      "frequency": 4,
+      "usage": ["start-now-card-border", "start-now-numbered-badges"]
+    },
+    {
+      "token": "--color-indigo-50 / bg-indigo-50",
+      "value": "#eef2ff",
+      "value_lab": "lab(95.48% 0.41 -6.79)",
+      "frequency": 7,
+      "usage": ["hero-gradient-start", "section-badge-bg", "check-icon-container-bg"]
+    },
+    {
+      "token": "--border / border-gray-200",
+      "value": "#e5e7eb",
+      "value_lab": "lab(91.6% -0.16 -2.27)",
+      "frequency": 10,
+      "usage": ["pricing-card-border", "faq-divider", "tag-pill-border", "nav-border"]
+    },
+    {
+      "token": "--color-indigo-700 / hover:bg-indigo-700",
+      "value": "#4338ca",
+      "value_lab": "lab(32.4% 49.2 -84.7)",
+      "frequency": 3,
+      "usage": ["cta-btn-hover-state"]
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Inter",
+      "source": "Next.js static media (woff2, variable font)",
+      "weights": ["100 900 (variable)"],
+      "display": "swap",
+      "fallback": "Inter Fallback (local Arial)"
+    }
+  ],
+  "font-sizes": [
+    { "token": "--text-xs",   "value": "0.75rem",   "px": 12,  "usage": ["badge", "mock-titlebar", "section-badge", "tag-pill"] },
+    { "token": "--text-sm",   "value": "0.875rem",  "px": 14,  "usage": ["body-text", "nav-links", "feature-list", "faq-qa", "footer"] },
+    { "token": "--text-base", "value": "1rem",       "px": 16,  "usage": ["nav-logo"] },
+    { "token": "--text-lg",   "value": "1.125rem",  "px": 18,  "usage": ["hero-subtext (mobile)"] },
+    { "token": "--text-xl",   "value": "1.25rem",   "px": 20,  "usage": ["hero-subtext (desktop)"] },
+    { "token": "--text-2xl",  "value": "1.5rem",    "px": 24,  "usage": ["demo-body-text"] },
+    { "token": "--text-3xl",  "value": "1.875rem",  "px": 30,  "usage": ["pricing-h2 (mobile)", "faq-h2 (mobile)"] },
+    { "token": "--text-4xl",  "value": "2.25rem",   "px": 36,  "usage": ["hero-h1 (mobile)", "pricing-h2 (desktop)"] },
+    { "token": "--text-5xl",  "value": "3rem",      "px": 48,  "usage": ["hero-h1 (tablet)"] },
+    { "token": "--text-6xl",  "value": "3.75rem",   "px": 60,  "usage": ["hero-h1 (desktop lg:)"] },
+    { "token": "text-[1.75rem]", "value": "1.75rem", "px": 28, "usage": ["demo-h2"] },
+    { "token": "text-[0.9375rem]", "value": "0.9375rem", "px": 15, "usage": ["demo-subtext"] },
+    { "token": "text-3xl",    "value": "1.875rem",  "px": 30,  "usage": ["pricing-card price"] }
+  ],
+  "spacings": [
+    { "token": "py-20",  "value": "5rem / 80px",  "usage": ["section vertical padding"] },
+    { "token": "py-24",  "value": "6rem / 96px",  "usage": ["hero section padding-top"] },
+    { "token": "px-6",   "value": "1.5rem / 24px", "usage": ["section horizontal padding"] },
+    { "token": "gap-6",  "value": "1.5rem / 24px", "usage": ["pricing-grid gap"] },
+    { "token": "p-8",    "value": "2rem / 32px",   "usage": ["pricing-card padding"] },
+    { "token": "p-5",    "value": "1.25rem / 20px", "usage": ["mock-frame content padding"] },
+    { "token": "gap-8",  "value": "2rem / 32px",   "usage": ["nav-links gap"] },
+    { "token": "gap-x-16", "value": "4rem / 64px", "usage": ["demo section left-right gap"] },
+    { "token": "max-w-6xl", "value": "72rem / 1152px", "usage": ["section max container"] },
+    { "token": "max-w-3xl", "value": "48rem / 768px",  "usage": ["hero content width"] },
+    { "token": "max-w-4xl", "value": "56rem / 896px",  "usage": ["pricing grid container"] }
+  ],
+  "radii": [
+    { "token": "--radius / rounded-xl",  "value": "0.75rem / 12px",  "usage": ["pricing-card", "mock-frame"] },
+    { "token": "--radius-md / rounded-lg","value": "0.5rem / 8px",   "usage": ["cta-btn", "section-badge", "info-cards"] },
+    { "token": "rounded-full",            "value": "9999px",          "usage": ["tag-pills", "coming-soon-badge", "numbered-step"] },
+    { "token": "rounded-md",              "value": "0.375rem / 6px",  "usage": ["secondary-btn", "icon-bg"] },
+    { "token": "rounded-2xl",             "value": "1rem / 16px",     "usage": ["TBD - not in ShipYourIdea"] }
+  ],
+  "shadows": [
+    {
+      "name": "card-multilayer",
+      "value": "0 2px 3px rgb(0 0 0/0.04), 0 24px 68px rgb(47 48 55/0.05), 0 4px 6px rgb(34 42 53/0.04), 0 0 0 1px rgb(34 42 53/0.05), 0 1px 1px rgb(0 0 0/0.05)",
+      "frequency": 2,
+      "usage": ["demo-mock-frame"]
+    },
+    {
+      "name": "button-inset",
+      "value": "0 1px rgba(255,255,255,0.07) inset, 0 1px 3px rgba(17,24,39,0.2)",
+      "frequency": 5,
+      "usage": ["cta-primary-btn"]
+    },
+    {
+      "name": "pricing-card-base",
+      "value": "0 2px 3px rgb(0 0 0/0.04), 0 0 0 1px rgb(34 42 53/0.05)",
+      "frequency": 3,
+      "usage": ["pricing-cards"]
+    }
+  ],
+  "motion": [
+    { "name": "section-reveal",  "value": "opacity+translateY(24px) → none", "trigger": "scroll-into-view" },
+    { "name": "btn-hover",       "value": "transition duration-300", "trigger": "hover" },
+    { "name": "arrow-icon",      "value": "translateX(1px)", "trigger": "group-hover" },
+    { "name": "pulse-animation", "value": "pulse 2s cubic-bezier(.4,0,.6,1) infinite", "usage": ["TBD"] }
+  ]
+}

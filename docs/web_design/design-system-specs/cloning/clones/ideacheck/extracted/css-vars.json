@@ -1,0 +1,173 @@
+{
+  "_meta": {
+    "source": "raw/css-vars-raw.json + raw/computed-styles.json",
+    "tech_stack": "Next.js + Tailwind CSS v4 + shadcn/ui",
+    "note": "與 ShipYourIdea 共享相同 Tailwind v4 + shadcn/ui token 系統；差異點已標註"
+  },
+  "colors": [
+    {
+      "token": "--color-indigo-600",
+      "value": "#4f46e5",
+      "value_lab": "lab(38.4% 52.6 -92.4)",
+      "frequency": 25,
+      "usage": ["nav.login-btn", "section-badge", "cta-primary", "check-icon", "pricing-unlimited-border", "stats-number", "text-indigo-600"]
+    },
+    {
+      "token": "--foreground / text-gray-950",
+      "value": "#030712",
+      "value_lab": "lab(2.75% 0 0)",
+      "frequency": 20,
+      "usage": ["h1", "h2", "h3", "score-heading", "faq-question"]
+    },
+    {
+      "token": "--color-orange-500 / stroke-orange",
+      "value": "#f97316",
+      "value_lab": "lab(64.3% 57.2 90.4)",
+      "frequency": 9,
+      "usage": ["score-ring-stroke (score 42)", "willingness-to-pay-bar", "retention-bar"]
+    },
+    {
+      "token": "--color-red-500 / bg-red-100",
+      "value": "#ef4444",
+      "value_lab": "lab(55.5% 75.1 48.9)",
+      "frequency": 7,
+      "usage": ["death-prediction-badges", "competitive-analysis-bar", "moat-bar", "risk-label-text"]
+    },
+    {
+      "token": "--destructive / bg-destructive/10",
+      "value": "rgba(239,68,68,0.1)",
+      "value_lab": "lab(48.4% 77.4 61.5)",
+      "frequency": 3,
+      "usage": ["risk-badge (Very High Risk)"]
+    },
+    {
+      "token": "--color-teal-500",
+      "value": "#14b8a6",
+      "value_lab": "lab(67.4% -49.1 -2.6)",
+      "frequency": 4,
+      "usage": ["pain-reality-bar", "technical-feasibility-bar"]
+    },
+    {
+      "token": "--color-amber-500",
+      "value": "#f59e0b",
+      "value_lab": "lab(72.72% 31.87 97.94)",
+      "frequency": 4,
+      "usage": ["market-size-bar", "timing-analysis-bar"]
+    },
+    {
+      "token": "--muted-foreground / text-gray-500",
+      "value": "#6b7280",
+      "value_lab": "lab(47.78% -0.39 -10.0)",
+      "frequency": 18,
+      "usage": ["nav-links", "body-text", "stat-labels", "pricing-tagline", "faq-answer"]
+    },
+    {
+      "token": "text-gray-400",
+      "value": "#9ca3af",
+      "value_lab": "lab(65.9% -0.83 -8.2)",
+      "frequency": 10,
+      "usage": ["footer-links", "social-proof", "inactive-tab", "dimension-label"]
+    },
+    {
+      "token": "--background / bg-white",
+      "value": "#ffffff",
+      "frequency": 14,
+      "usage": ["body", "nav-bg", "pricing-cards", "source-cards", "mock-frame"]
+    },
+    {
+      "token": "bg-gray-50",
+      "value": "#f9fafb",
+      "frequency": 7,
+      "usage": ["demo-section-bg", "dimension-chart-bg"]
+    },
+    {
+      "token": "--color-indigo-50 / bg-indigo-50",
+      "value": "#eef2ff",
+      "frequency": 8,
+      "usage": ["hero-gradient-start", "section-badge-bg", "source-card-icon-bg"]
+    },
+    {
+      "token": "--border / border-gray-200",
+      "value": "#e5e7eb",
+      "frequency": 12,
+      "usage": ["source-card-border", "dimension-bar-track", "faq-divider", "pricing-free-border"]
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Inter",
+      "source": "Next.js static media (woff2, variable font)",
+      "weights": ["100 900 (variable)"],
+      "display": "swap",
+      "fallback": "Inter Fallback (local Arial)"
+    }
+  ],
+  "font-sizes": [
+    { "token": "--text-xs",       "value": "0.75rem",    "px": 12,  "usage": ["section-badge", "dimension-bar-label", "chart-header"] },
+    { "token": "--text-sm",       "value": "0.875rem",   "px": 14,  "usage": ["body", "feature-list", "source-card-body", "faq-qa"] },
+    { "token": "--text-base",     "value": "1rem",       "px": 16,  "usage": ["nav-logo", "source-card-title"] },
+    { "token": "--text-lg",       "value": "1.125rem",   "px": 18,  "usage": ["hero-subtext (mobile)"] },
+    { "token": "--text-xl",       "value": "1.25rem",    "px": 20,  "usage": ["hero-subtext (desktop)"] },
+    { "token": "--text-3xl",      "value": "1.875rem",   "px": 30,  "usage": ["pricing-h2", "faq-h2"] },
+    { "token": "--text-4xl",      "value": "2.25rem",    "px": 36,  "usage": ["hero-h1 (mobile)", "section-h2 (desktop)"] },
+    { "token": "--text-5xl",      "value": "3rem",       "px": 48,  "usage": ["hero-h1 (tablet)", "stats-number (data-sources)"] },
+    { "token": "--text-6xl",      "value": "3.75rem",    "px": 60,  "usage": ["hero-h1 (desktop lg:)"] },
+    { "token": "text-2xl.font-extrabold", "value": "1.5rem", "px": 24, "usage": ["score ring center number"] },
+    { "token": "text-[1.75rem]",  "value": "1.75rem",    "px": 28,  "usage": ["demo-h2"] },
+    { "token": "text-[0.625rem]", "value": "0.625rem",   "px": 10,  "usage": ["risk-badge", "chart-section-label", "coming-soon-badge"] }
+  ],
+  "spacings": [
+    { "token": "py-20",    "value": "5rem / 80px",   "usage": ["section vertical padding"] },
+    { "token": "py-24",    "value": "6rem / 96px",   "usage": ["data-sources section, hero pt"] },
+    { "token": "px-6",     "value": "1.5rem / 24px", "usage": ["section horizontal padding"] },
+    { "token": "p-8",      "value": "2rem / 32px",   "usage": ["pricing-card padding"] },
+    { "token": "p-6",      "value": "1.5rem / 24px", "usage": ["source-card padding"] },
+    { "token": "p-5",      "value": "1.25rem / 20px","usage": ["mock-frame content padding"] },
+    { "token": "gap-6",    "value": "1.5rem / 24px", "usage": ["pricing-grid gap"] },
+    { "token": "gap-4",    "value": "1rem / 16px",   "usage": ["source-card grid gap"] },
+    { "token": "gap-x-16", "value": "4rem / 64px",   "usage": ["demo section left-right gap"] },
+    { "token": "gap-16",   "value": "4rem / 64px",   "usage": ["stats row gap-x"] },
+    { "token": "max-w-6xl","value": "72rem / 1152px","usage": ["main section container"] },
+    { "token": "max-w-4xl","value": "56rem / 896px", "usage": ["pricing container"] },
+    { "token": "max-w-2xl","value": "42rem / 672px", "usage": ["pricing-grid max, faq container"] }
+  ],
+  "radii": [
+    { "token": "rounded-xl",   "value": "0.75rem / 12px", "usage": ["pricing-card", "mock-frame"] },
+    { "token": "rounded-2xl",  "value": "1rem / 16px",    "usage": ["source-cards (IdeaCheck 特有)"] },
+    { "token": "rounded-lg",   "value": "0.5rem / 8px",   "usage": ["cta-btn", "section-badge", "icon-bg"] },
+    { "token": "rounded-full", "value": "9999px",          "usage": ["tag-pills", "most-popular-badge", "score-ring progress circle"] },
+    { "token": "rounded-md",   "value": "0.375rem / 6px", "usage": ["secondary-btn"] }
+  ],
+  "shadows": [
+    {
+      "name": "card-multilayer",
+      "value": "0 2px 3px rgb(0 0 0/0.04), 0 24px 68px rgb(47 48 55/0.05), 0 4px 6px rgb(34 42 53/0.04), 0 0 0 1px rgb(34 42 53/0.05), 0 1px 1px rgb(0 0 0/0.05)",
+      "frequency": 2,
+      "usage": ["demo-mock-frame"]
+    },
+    {
+      "name": "button-inset",
+      "value": "0 1px rgba(255,255,255,0.07) inset, 0 1px 3px rgba(17,24,39,0.2)",
+      "frequency": 4,
+      "usage": ["cta-primary-btn"]
+    },
+    {
+      "name": "pricing-card-base",
+      "value": "0 2px 3px rgb(0 0 0/0.04), 0 0 0 1px rgb(34 42 53/0.05)",
+      "frequency": 2,
+      "usage": ["pricing-cards"]
+    },
+    {
+      "name": "pricing-card-hover",
+      "value": "shadow-lg (transition-shadow hover:shadow-lg)",
+      "frequency": 2,
+      "usage": ["pricing-cards on hover (IdeaCheck 特有)"]
+    }
+  ],
+  "motion": [
+    { "name": "section-reveal", "value": "opacity+translateY(24px) → none", "trigger": "scroll-into-view" },
+    { "name": "btn-hover",      "value": "transition duration-300", "trigger": "hover" },
+    { "name": "source-card-border-hover", "value": "border-gray-200 → border-indigo-300, bg → gray-50/50", "trigger": "group-hover" },
+    { "name": "score-ring",     "value": "stroke-dashoffset 靜態（無動畫）", "note": "只有靜態展示，無 count-up 動畫" }
+  ]
+}

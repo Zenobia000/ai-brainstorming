@@ -1,0 +1,20 @@
+{
+  "documentFonts": [
+    "Inter | 100 900 | normal | unloaded",
+    "Inter | 100 900 | normal | loaded",
+    "Inter Fallback | normal | normal | loaded"
+  ],
+  "fontFaces": [
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"../media/2c55a0e60120577a-s.0bjc5tiuqdqro.woff2\") format(\"woff2\"); unicode-range: U+460-52F, U+",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"../media/9c72aa0f40e4eef8-s.0m6w47a4e5dy9.woff2\") format(\"woff2\"); unicode-range: U+301, U+400-",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"../media/ad66f9afd8947f86-s.11u06r12fd6v_.woff2\") format(\"woff2\"); unicode-range: U+1F00-1FFF; ",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"../media/5476f68d60460930-s.0wxq9webf.ew4.woff2\") format(\"woff2\"); unicode-range: U+370-377, U+",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"../media/2bbe8d2671613f1f-s.067x_6k0k23tk.woff2\") format(\"woff2\"); unicode-range: U+102-103, U+",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"../media/1bffadaabf893a1e-s.16ipb6fqu393i.woff2\") format(\"woff2\"); unicode-range: U+100-2BA, U+",
+    "@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url(\"../media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2\") format(\"woff2\"); unicode-range: U+0-FF, U+1",
+    "@font-face { font-family: \"Inter Fallback\"; src: local(\"Arial\"); ascent-override: 90.44%; descent-override: 22.52%; line-gap-override: 0%; size-adjust: 107.12%; }"
+  ],
+  "computedFamiliesInUse": [
+    "Inter, \"Inter Fallback\""
+  ]
+}
