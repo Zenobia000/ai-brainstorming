@@ -1,6 +1,3 @@
-<div align="center">
-
-<img src="assets/hero.png" alt="AI Brainstorming" width="720" />
 
 # AI Brainstorming — 一人公司 0→1 方法論倉庫
 
@@ -9,8 +6,6 @@
 [![Version](https://img.shields.io/badge/version-v1.0-blue)]()
 [![Language](https://img.shields.io/badge/language-繁體中文-red)]()
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-
-</div>
 
 > 這不是一個 SaaS，不是一個工具，也不是另一份「AI 創業點子清單」。
 > 這是一套**可執行、可驗證、可反覆使用的方法論文件庫** — 教 solo founder 和 indie hacker 在 AI 時代用最短路徑把點子變成第一筆收入。
